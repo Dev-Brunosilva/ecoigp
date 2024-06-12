@@ -51,33 +51,31 @@
 }
 @media only screen and (max-width: 575px){
     .fundo1 img{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        padding-top: 8%;
         width: 100%;
         height: 100%;
     }
     .content img{
+
         width: 100%;
         height: 100%;
     }
     .sobre-nos{
-        margin: 1%;
         display:flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .sobre-nos h2, p{
+    .sobre-nos h2 p{
+        font-size: 8%;
         margin-top: -6%;
     }
     .sobre-nos .img{
         display: flex;
         align-items: center;
         justify-content: center;
-        
-        width: 50%;
-        height: 50%;
+        width: 10%;
+        height: 10%;
     }
     .rodape1{
         display:flex;
