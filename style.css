@@ -45,6 +45,7 @@ body{
 
 .content .lista-menu{
     width: 100%;
+    height: auto;
     display: flex;
     align-items: start;
     text-align: start;
@@ -91,10 +92,10 @@ body{
     }
 .sobre-nos img {
     width: 450px;
-    height: 450px;
+    height: auto;
     margin-top: 40%;
     border-radius: 5%;
-    margin-left: -5%;
+    margin-left: -6%;
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.473);
     }
 .contentsobrenos{
