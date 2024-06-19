@@ -126,7 +126,7 @@ body{
     transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     }
 .serviços div:hover{
-    flex: 5;
+    flex: 15;
     }
     /* rodape*/
 .rodape1{
