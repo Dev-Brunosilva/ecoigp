@@ -84,54 +84,49 @@ body{
 .sobre-nos{
     background-color:rgb(255, 255, 255) ;
     width: 100%;
-    padding-bottom: 5em;
+    padding: 1.5%;
     color: aliceblue;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     }
-.sobre-nos img {
-    width: 450px;
-    height: auto;
-    margin-top: 40%;
-    border-radius: 5%;
-    margin-left: -6%;
-    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.473);
-    }
+
 .contentsobrenos{
-    margin-top: 10%;
+    margin-top: 1%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     }
 .contentsobrenos h2 {
-    font-size: 45px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 3%;
     color: rgb(10, 26, 4);
     font-weight: 900;
     }
 .contentsobrenos p {
     text-align: center;
-    font-size: 25px;
-    padding: 6%;
-    color:  rgb(10, 26, 4);
+    font-size: 20px;
+    color:  rgb(34, 102, 9);
     font-weight: 600;
 }
 .serviços{
-    background-color: rgb(51, 45, 45);
+    background-color:rgb(10, 26, 4);
     display: flex;
+    width: auto;
     height: 30rem;
 }
 .serviços div{
     flex: 1;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: auto 130%;
     cursor: pointer;
     transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
     }
 .serviços div:hover{
-    flex: 7;
+    flex: 9;
     }
     /* rodape*/
 .rodape1{
@@ -163,6 +158,9 @@ body{
     justify-content: center;
     margin-bottom: 3%;
 }
+.rodape1 img{
+    margin-top: 5%;
+}
 
 .rodape1 h2{
     font-weight: 100;
@@ -171,7 +169,7 @@ body{
     color: #ffffff;
 }
 .rodape1 h1{
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 5%;
     text-transform: uppercase;
     color: #ffffff;
@@ -195,6 +193,7 @@ body{
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.836);
     transition: transform 0.4s;
+    
 }
 
 .rodape1 h3{
