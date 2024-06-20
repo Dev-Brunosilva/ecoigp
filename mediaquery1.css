@@ -1,0 +1,53 @@
+
+@media only screen and (max-width: 575px){
+    .content{
+        padding: 10px;
+        
+    }
+    
+    .sobre-nos{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .sobre-nos h2 {
+        margin-top: 25%;
+        padding: 4%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+    }
+    .sobre-nos p{
+        margin-left: 20%;
+        }
+    .sobre-nos img{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+        width: 90%;
+        height: 90%;
+
+    }
+    .rodape1{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .rodape1 h1{
+        padding: 5%;
+
+    }
+    .rodape1 img{
+        margin-bottom: 8%;
+    }
+    
+    .rodape1 .mapa{
+        border: none;
+        box-shadow: none;
+    }
+}

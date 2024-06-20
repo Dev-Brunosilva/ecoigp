@@ -9,10 +9,7 @@
         justify-content: center;
     }
     .sobre-nos h2, p{
-        margin-top: -6%;
-    }
-    .sobre-nos .img{
-        margin-top: -15%;
+        margin-top: 2%;
     }
     .rodape1 h1{
         margin-bottom: 8%;
@@ -28,12 +25,7 @@
         align-items: center;
         justify-content: center;
     }
-    .sobre-nos h2, p{
-        margin-top: -6%;
-    }
-    .sobre-nos .img{
-        margin-top: -15%;
-    }
+    
     
     .rodape1{
         display:flex;
