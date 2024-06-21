@@ -69,37 +69,33 @@ body{
 .sobre-nos{
     background-color: rgb(255, 255, 255);
     width: 100%;
-    height: auto;
-    padding: 3%;
     display: flex;
-    color: rgb(65, 177, 25);
     border-top: 0.6px solid rgba(0, 0, 0, 0.575);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-
+    align-items:center;
+    gap: 10%;
 }
 .sobre-nos h2 {
     color: rgb(10, 26, 4);
-    margin-left: -20%;
+    width: 100%;
+    text-align: center;
     font-size: 25px;
     margin-top: 3%;
     height: auto;
     font-weight: 900;
     }
 .sobre-nos p {
-    align-items: center;
     text-align: center;
-    width: 60%;
+    width: 100%;
+    margin-top: 3%;
     height: auto;
     font-size: 20px;
     font-weight: 400;
     color:  rgb(34, 102, 9);
 }
 .sobre-nos img {
-    width: 90%;
+    width: 70%;
     margin: 5%;
-    height: auto;
+    margin-left: 20%;
     margin-top: 20%;
     box-shadow: 0 0 10px 3px rgb(255, 255, 255);
 }
