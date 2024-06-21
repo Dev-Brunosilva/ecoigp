@@ -1,0 +1,29 @@
+@media only screen and (max-width: 575px){
+    .card{
+        width: 80%;
+        padding: 10%;
+        
+    }
+    .content {
+        height: auto;
+        padding: 10px;
+    }
+    .rodape1{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .rodape1 h1{
+        padding: 5%;
+
+    }
+    .rodape1 img{
+        margin-bottom: 8%;
+    }
+    
+    .rodape1 .mapa{
+        border: none;
+        box-shadow: none;
+    }
+}

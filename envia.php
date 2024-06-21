@@ -1,23 +1,58 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Coletando os dados do formulário
     $nome = $_POST['nome'];
-    $idade = $_POST['idade'];
+    $whatsapp = $_POST['whatsapp'];
+    $email = $_POST['email'];
     $assunto = $_POST['assunto'];
-
-    // Configurações para enviar o email
-    $to = 'brunojureia@hotmail.com'; // Insira aqui o seu endereço de email
-    $subject = 'Novo contato pelo formulário ';
-    $message = "Nome: $nome\n";
-    $message .= "Idade: $idade\n\n";
-    $message .= "Mensagem:\n$assunto";
-
-    // Envia o email
-    $headers = "From: $nome <$to>";
-    if (mail($to, $subject, $message, $headers)) {
-        echo '<p>Email enviado com sucesso!</p>';
+    
+    // Processando o envio do currículo
+    $nome_arquivo = $_FILES['curriculo']['name'];
+    $temp_name = $_FILES['curriculo']['tmp_name'];
+    $tipo_arquivo = $_FILES['curriculo']['type'];
+    
+    // Verifica se o arquivo é PDF ou DOC/DOCX
+    if (($tipo_arquivo == "application/pdf") || ($tipo_arquivo == "application/msword") || ($tipo_arquivo == "application/vnd.openxmlformats-officedocument.wordprocessingml.document")) {
+        
+        // Diretório onde será salvo o currículo
+        $diretorio = "curriculos/";
+        
+        // Movendo o currículo para o diretório desejado
+        if (move_uploaded_file($temp_name, $diretorio . $nome_arquivo)) {
+            
+            // Enviando email com os dados do formulário e currículo anexado
+            $destino = "brunojureia@hotmail.com"; // Altere para o seu endereço de email
+            
+            $mensagem = "Nome: $nome\n";
+            $mensagem .= "WhatsApp: $whatsapp\n";
+            $mensagem .= "Email: $email\n";
+            $mensagem .= "Assunto: $assunto\n";
+            
+            // Enviando o email
+            $headers = "From: $email\r\n";
+            $headers .= "Reply-To: $email\r\n";
+            $headers .= "Content-type: text/plain; charset=utf-8\r\n";
+            
+            if (mail($destino, $assunto, $mensagem, $headers)) {
+                echo "<script>alert('Formulário enviado com sucesso!');</script>";
+                echo "<script>window.location = 'formulario.html';</script>";
+            } else {
+                echo "<script>alert('Erro ao enviar o formulário. Tente novamente mais tarde.');</script>";
+                echo "<script>window.location = 'formulario.html';</script>";
+            }
+            
+        } else {
+            echo "<script>alert('Erro ao enviar o currículo. Tente novamente mais tarde.');</script>";
+            echo "<script>window.location = 'formulario.html';</script>";
+        }
     } else {
-        echo '<p>Ocorreu um erro ao enviar o email.</p>';
+        echo "<script>alert('Formato de currículo inválido. Envie um PDF, DOC ou DOCX.');</script>";
+        echo "<script>window.location = 'formulario.html';</script>";
     }
+} else {
+    header("Location: formulario.html");
+    exit();
 }
 ?>
+
 
