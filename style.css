@@ -73,6 +73,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .fundo1 img{
     width: 100%;
