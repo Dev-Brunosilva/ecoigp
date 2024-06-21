@@ -1,8 +1,12 @@
 @media only screen and (max-width: 575px){
+    .container .card{
+        margin-top: 20%;
+        height: auto;
+    }
     .card{
         width: 80%;
         padding: 10%;
-        
+        margin-top: 10%;
     }
     .content {
         height: auto;
