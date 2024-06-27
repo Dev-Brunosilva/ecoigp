@@ -21,14 +21,15 @@
         margin-top: 25%;
         padding: 4%;
         text-align: center;
-        justify-content: center;
+        justify-content: center;   
         align-items: center;
     }
     .sobre-nos img{
+        flex-direction: column;
         text-align: center;
         justify-content: center;
         align-items: center;
-        margin-left: 5%;
+        margin-left: 1%;
         width: 90%;
         height: 90%;
 

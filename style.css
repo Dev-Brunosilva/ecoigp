@@ -146,9 +146,23 @@ body{
     
     .slides{
         width: 400%;
+        height: auto;
         display: flex;
         justify-content: center;
         text-align: center;
+    }
+    .carrosel .carrosel-texto {
+        margin-bottom: 3%;
+        font-size: 25px;
+        margin-top: 1%;
+        color: rgb(10, 26, 4);
+        font-weight: 900;
+    }
+    .carrosel .carrosel-texto p{
+        text-align: center;
+        font-size: 20px;
+        color:  rgb(34, 102, 9);
+        font-weight: 600;
     }
     .slides input{
         display:none;
@@ -158,8 +172,11 @@ body{
         transition: 1s;
     }
     .slide img{
-        width: 65%;
+        width: 50%;
         height:60%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
+        border-radius: 5%;
+        margin-bottom: 6%;
     }
 
 
@@ -167,7 +184,7 @@ body{
         position: absolute;
         display: flex;
         width:92%;
-        margin-top: 40%;
+        margin-top: 33%;
         margin-left: -300%;
         text-align: center;
         align-items: center;
