@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (move_uploaded_file($temp_name, $diretorio . $nome_arquivo)) {
 
             // Enviando email com os dados do formulário e currículo anexado
-            $destino = "dpecosolucoes@outlook.com"; // Altere para o seu endereço de email
+            $destino = "brunosurf1005@gmail.com"; // Altere para o seu endereço de email
 
             $mensagem = "Nome: $nome\n";
             $mensagem .= "WhatsApp: $whatsapp\n";
