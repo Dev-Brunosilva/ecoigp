@@ -30,6 +30,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Diretório onde será salvo o currículo
             $diretorio = "curriculos/";
 
+            // Verificar se o diretório existe e tem permissões de escrita
+            if (!is_dir($diretorio)) {
+                if (!mkdir($diretorio, 0777, true)) {
+                    echo "Erro: Não foi possível criar o diretório $diretorio.";
+                    exit();
+                }
+            }
+
+            if (!is_writable($diretorio)) {
+                echo "Erro: O diretório $diretorio não tem permissões de escrita.";
+                exit();
+            }
+
             // Movendo o currículo para o diretório desejado
             if (move_uploaded_file($temp_name, $diretorio . $nome_arquivo)) {
                 // Enviando email com os dados do formulário e currículo anexado
@@ -52,8 +65,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if (mail($destino, $assunto, $mensagem, $headers)) {
                     echo "Formulário enviado com sucesso!";
                 } else {
+                    // Registrar erro ao enviar o email
                     $error = error_get_last();
-                    echo "Erro ao enviar o formulário: " . $error['message'];
+                    echo "Erro ao enviar o formulário. Detalhes do erro: " . print_r($error, true);
                 }
             } else {
                 echo "Erro ao enviar o currículo. Tente novamente mais tarde.";
@@ -69,4 +83,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit();
 }
 ?>
+
+
 
