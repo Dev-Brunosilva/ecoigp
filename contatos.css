@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,6 +10,7 @@
     font-weight: 500;
     font-style: normal;
 }
+
 body {
     background-color: #ffffff;
     overflow-x: hidden;
@@ -25,13 +27,14 @@ body {
     background-color: rgb(10, 26, 4);
     position: fixed;
     padding-left: 3rem;
-    
+
 
 }
-.logo{
+
+.logo {
     width: 70px;
     height: auto;
-    display:flex ;
+    display: flex;
 }
 
 .logo img {
@@ -44,7 +47,7 @@ body {
     border-radius: 15%;
 }
 
-.content .lista-menu{
+.content .lista-menu {
     width: 100%;
     height: auto;
     display: flex;
@@ -62,8 +65,9 @@ body {
     font-weight: 500;
     transition: all 400ms ease-in
 }
+
 .content .lista-menu li a:hover {
-    border-bottom:2px solid rgb(0, 255, 149);
+    border-bottom: 2px solid rgb(0, 255, 149);
     color: rgba(0, 255, 64, 0.767);
 }
 
@@ -101,7 +105,9 @@ label {
     margin-bottom: 10px;
 }
 
-input[type="text"], input[type="email"], input[type="file"] {
+input[type="text"],
+input[type="email"],
+input[type="file"] {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #000000;
@@ -123,79 +129,87 @@ input[type="submit"]:hover {
 }
 
 
-.rodape1{
+.rodape1 {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content:space-around ;
+    justify-content: space-around;
     text-align: center;
     font-size: 9px;
     border-top: 0.6px solid rgb(250, 247, 247);
     font-family: 'Poppins', sans-serif;
-    background-color:rgba(10, 26, 4, 0.842);
+    background-color: rgba(10, 26, 4, 0.842);
 }
+
 .rodape1 i {
     height: 29%;
     width: 15%;
     cursor: pointer;
     color: #fc0202;
-    
+
 }
-.txt6{
+
+.txt6 {
     color: #ffffff;
     font-size: 30px;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
-    text-align: center ;
+    text-align: center;
     align-items: center;
     justify-content: center;
     margin-bottom: 3%;
 }
-.rodape1 img{
+
+.rodape1 img {
     margin-top: 5%;
 }
 
-.rodape1 h2{
+.rodape1 h2 {
     font-weight: 100;
     font-size: 17px;
     margin-top: 2%;
     color: #ffffff;
 }
-.rodape1 h1{
+
+.rodape1 h1 {
     font-size: 15px;
     margin-top: 5%;
     text-transform: uppercase;
     color: #ffffff;
 }
-.rodape1 p{
+
+.rodape1 p {
     font-size: 15px;
     font-weight: 50;
     color: #ffffff;
 }
+
 .txt7 {
     margin-top: 3%;
     padding: 1%;
     width: 20%;
     border-radius: 35%;
-    box-shadow: 2px 2px 5px rgba(0,0,0.400);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0.400);
     box-sizing: border-box;
     margin-bottom: 2%;
 }
-.txt7:hover{
+
+.txt7:hover {
     border: 2px solid rgba(255, 255, 255, 0.548);
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.836);
     transition: transform 0.4s;
-    
+
 }
 
-.rodape1 h3{
+.rodape1 h3 {
     font-size: 17px;
     font-weight: 100;
     color: #ffffff;
 }
-.rodape1 .mapa{
+
+.rodape1 .mapa {
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.623);
     margin-top: 3%;
     margin-bottom: 5%;
